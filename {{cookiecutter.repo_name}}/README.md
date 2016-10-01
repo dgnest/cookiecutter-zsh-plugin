@@ -17,8 +17,11 @@
 If you're using [oh-my-zsh](https://gitub.com/robbyrussell/oh-my-zsh), install this plugin by doing the following:
 
 1. Go to your oh-my-zsh custom plugins directory - `cd ~/.oh-my-zsh/custom/plugins`
-2. Clone the plugin into a new gvm directory - `git clone https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}} gvm`
-3. Edit your `.zshrc` and add `plugins=( ... gvm )` to your list of plugins
+2. Clone the plugin
+```bash
+  git clone https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+```bash
+3. Edit your `.zshrc` and add `plugins=( ... {{cookiecutter.repo_name}} )` to your list of plugins
 4. Open a new terminal and enjoy!
 
 ## [antigen](https://github.com/zsh-users/antigen) users
