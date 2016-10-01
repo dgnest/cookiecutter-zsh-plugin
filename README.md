@@ -37,9 +37,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [Luis Mayta][link-luis]
-- [All Contributors][link-contributors]
-
+Made with love :heart: by Dgnest
 
 <!-- Other -->
 
