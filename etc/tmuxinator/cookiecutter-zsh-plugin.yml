@@ -33,7 +33,7 @@ windows:
         - editor:
             - pyenv activate cookiecutter
             - <%= ENV["EDITOR"] %>
-        - vagrant:
+        - docker:
             - pyenv activate cookiecutter
   - python:
       layout: main-vertical
@@ -48,10 +48,10 @@ windows:
             - pyenv activate cookiecutter
         - mysql:
             - pyenv activate cookiecutter
-  - vagrant:
+  - docker:
       layout: main-vertical
       panes:
         - code:
             - pyenv activate cookiecutter
-        - vagrant:
+        - docker:
             - pyenv activate cookiecutter
