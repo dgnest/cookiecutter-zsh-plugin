@@ -1,4 +1,4 @@
-# Plugin Zsh {{cookiecutter.repo_name}}
+# Plugin Zsh {{cookiecutter.project_name}}
 
 <span class="badges" align="center">
 [![Build Status](https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.svg)](https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}})
