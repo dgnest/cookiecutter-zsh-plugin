@@ -5,10 +5,10 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 ## [Unreleased][unreleased]
 
 
-[unreleased]: https://github.com/dgnest/cookiecutter-zsh-plugin/compare/0.0.1...HEAD
-[0.0.1]: https://github.com/dgnest/cookiecutter-zsh-plugin/compare/0.0.0...0.0.1
+[unreleased]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/0.0.1...HEAD
+[0.0.1]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/0.0.0...0.0.1
 
 [CHANGELOG.md]: CHANGELOG.md
 [CONTRIBUTING.md]: CONTRIBUTING.md
-[LICENCE.md]: LICENCE.md
+[LICENCE]: LICENCE
 [README.md]: README.md
