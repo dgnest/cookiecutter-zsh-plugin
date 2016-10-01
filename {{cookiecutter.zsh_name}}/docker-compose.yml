@@ -1,0 +1,8 @@
+version: '2'
+services:
+  {{cookiecutter.project_name}}:
+    build: .
+    image: ubuntu:14.04
+    volumes:
+    - ./:/docker
+    restart: always
