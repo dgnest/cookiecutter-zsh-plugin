@@ -1,0 +1,15 @@
+{
+	"full_name": "Luis Mayta",
+	"email": "slovacus@gmail.com",
+  "github_user": "dgnest",
+  "github_author": "https://github.com/luismayta",
+  "company": "dgnest",
+	"project_name": "project_name",
+	"repo_name": "zsh-plugin-name",
+	"short_description": "ZSH plugin",
+	"release_date": "2016-05-03",
+	"year": "2016",
+	"version": "0.0.0",
+  "license": "Mit",
+  "allow_duplicates": "no"
+}
