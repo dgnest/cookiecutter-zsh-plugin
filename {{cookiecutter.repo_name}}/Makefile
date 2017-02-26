@@ -11,12 +11,9 @@ WGET = wget
 
 # Bin scripts
 CLEAN = $(shell) $(SCRIPT_DIR)/clean.sh
-GVM = $(shell) $(SCRIPT_DIR)/gvm.sh
 PYENV = $(shell) $(SCRIPT_DIR)/pyenv.sh
-SETUP = $(shell) $(SCRIPT_DIR)/setup.sh
 INSTALL = $(shell) $(SCRIPT_DIR)/install.sh
 TEST = $(shell) $(SCRIPT_DIR)/test.sh
-RUNSERVER = $(shell) $(SCRIPT_DIR)/runserver.sh
 SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
 LINGUIST = $(shell) $(SCRIPT_DIR)/linguist.sh
 
@@ -36,16 +33,11 @@ distclean: clean
 
 environment:
   $(PYENV)
-  $(GVM)
 
 
 maintainer-clean: distclean
   rm -rf $(BIN_DIR)
   rm -rf $(ROOT_DIR)/lib/
-
-
-runserver:
-  $(RUNSERVER)
 
 
 sync:
