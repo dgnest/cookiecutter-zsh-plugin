@@ -1,22 +1,16 @@
 #!/usr/bin/env bash
 # -*- coding: utf-8 -*-
 
-# load source files externals
-if [ -e "$HOME/.pyenv" ]; then
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
+export PROJECT_NAME='{{cookiecutter.project_name}}'
 
-[ -r "$HOME/.gvm/scripts/gvm" ] && source "$HOME/.gvm/scripts/gvm"
+export PYTHON_VERSION=2.7.9
+export PYENV_NAME="${PROJECT_NAME}"
 
-PROJECT_NAME='{{cookiecutter.project_name}}'
-PYTHON_VERSION=2.7.9
-PYENV_NAME="${PROJECT_NAME}"
-
-GVM_NAME="${PROJECT_NAME}"
-GVM_PATHS_NAME="{src, pkg, bin}"
+export GRIP_PORT=6430
 
 # Vars Dir
-ROOT_DIR="`pwd`"
-RESOURCES_DIR="$ROOT_DIR/resources"
-RESOURCES_DB_DIR="$RESOURCES_DIR/db"
+export ROOT_DIR
+ROOT_DIR=$(pwd)
+export RESOURCES_DIR="$ROOT_DIR/resources"
+export RESOURCES_DB_DIR="$RESOURCES_DIR/db"
+export REQUIREMENTS_DIR="${ROOT_DIR}/requirements/"

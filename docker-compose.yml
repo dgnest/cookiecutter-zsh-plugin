@@ -1,8 +1,14 @@
 version: '2'
 services:
-  zshplugin:
-    build: .
-    image: ubuntu:14.04
-    volumes:
-    - ./:/docker
+  plugin:
     restart: always
+    build: .
+    image: luismayta/ubuntu-dotfiles:latest
+    volumes_from:
+      - source_store
+
+  # Volumes source
+  source_store:
+    image: busybox
+    volumes:
+      - ./:/app/
