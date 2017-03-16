@@ -1,6 +1,6 @@
 version: '2'
 services:
-  {{cookiecutter.project_name}}:
+  {{cookiecutter.repo_name}}:
     restart: always
     build: .
     image: luismayta/ubuntu-dotfiles:latest
