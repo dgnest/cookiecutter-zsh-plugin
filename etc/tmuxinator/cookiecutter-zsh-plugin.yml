@@ -34,27 +34,27 @@ windows:
       layout: main-vertical
       panes:
         - editor:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-zsh-plugin
             - <%= ENV["EDITOR"] %>
         - docker:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-zsh-plugin
   - python:
       layout: main-vertical
       panes:
         - python:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-zsh-plugin
             - ipython
   - databases:
       layout: main-vertical
       panes:
         - postgresql:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-zsh-plugin
         - mysql:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-zsh-plugin
   - docker:
       layout: main-vertical
       panes:
         - code:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-zsh-plugin
         - docker:
-            - pyenv activate cookiecutter
+            - pyenv activate cookiecutter-zsh-plugin

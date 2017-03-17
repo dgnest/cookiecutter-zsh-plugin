@@ -1,5 +1,5 @@
-# ~/.tmuxinator/{{cookiecutter.project_name}}.yml
-name: {{cookiecutter.project_name}}
+# ~/.tmuxinator/{{cookiecutter.repo_name}}.yml
+name: {{cookiecutter.repo_name}}
 root: <%= ENV["PROJECTS"] %>/bash/{{cookiecutter.repo_name}}
 tmux_options: -2
 # Optional tmux socket
@@ -26,43 +26,35 @@ pre:
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t {{cookiecutter.project_name}}
+# post: tmux -CC attach -t {{cookiecutter.repo_name}}
 
 windows:
   - editor:
       layout: even-horizontal
       panes:
         - editor:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
             - <%= ENV["EDITOR"] %>
         - pwd:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
         - pwd:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
   - python:
       layout: main-vertical
       panes:
         - python:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
   - databases:
       layout: main-vertical
       panes:
         - ls:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
         - ls:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
   - docker:
       layout: main-vertical
       panes:
         - ls:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
         - ls:
-            - pyenv activate {{cookiecutter.project_name}}
-            - gvm pkgset use {{cookiecutter.project_name}}
+            - pyenv activate {{cookiecutter.repo_name}}
